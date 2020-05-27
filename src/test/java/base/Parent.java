@@ -14,12 +14,12 @@ public class Parent {
 
         //Get url from browser//
         driver.get("https://github.com/");
-//
-//        //Get Website title//
-//        System.out.println(driver.getTitle());
-//
-//        // Validate your're landed on correct page or not
-//        System.out.println(driver.getCurrentUrl());
+
+        //Get Website title//
+        System.out.println(driver.getTitle());
+
+        // Validate your're landed on correct page or not
+        System.out.println(driver.getCurrentUrl());
 
         //Get page source code from webiste
         //System.out.println(driver.getPageSource());
@@ -27,7 +27,7 @@ public class Parent {
         driver.get("http://the-internet.herokuapp.com/");
         driver.navigate().forward();
 
-        driver.quit();
+        driver.close();
 
     }
 
