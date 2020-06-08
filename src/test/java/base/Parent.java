@@ -9,7 +9,7 @@ public class Parent {
     @Test
     public void test(){
 
-        System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\arsalan\\Downloads\\New folder\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
 
         //Get url from browser//
