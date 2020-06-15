@@ -1,5 +1,4 @@
 package base;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,7 +10,7 @@ public class Test1 {
 
 
 
-    @Test
+    @Test (priority = 1)
     public void login (){
         System.setProperty("webdriver.chrome.driver" , "C:\\Users\\arsalan\\Downloads\\New folder\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
@@ -45,6 +44,8 @@ public class Test1 {
         driver.findElement(By.id("username")).sendKeys("Bilal");
         driver.findElement(By.id("password")).sendKeys("abc123");
         driver.findElement(By.xpath("//*[@id=\"Login\"]")).click();
+       // System.out.println(driver.findElement(By.cssSelector("div#error.loginError")).getText());
+        System.out.println(driver.findElement(By.id("error")).getText());
        // driver.switchTo().window("https://login.salesforce.com/?locale=in");
     }
 
@@ -53,8 +54,8 @@ public class Test1 {
 
         //Object of tests
         Test1 run = new Test1 ();
-        run.login();
-//      run.login2();
+  //      run.login();
+          run.login2();
 
 
     }
