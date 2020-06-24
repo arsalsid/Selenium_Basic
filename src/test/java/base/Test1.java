@@ -12,7 +12,7 @@ public class Test1 {
 
     @Test (priority = 1)
     public void login (){
-        System.setProperty("webdriver.chrome.driver" , "C:\\Users\\arsalan\\Downloads\\New folder\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver" , "C:\\Users\\asiddique\\Downloads\\Git repo\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
 
         // facebook page//
@@ -20,12 +20,13 @@ public class Test1 {
 
         driver.findElement(By.id("email")).sendKeys("03152865702");
         driver.findElement(By.name("pass")).sendKeys("arsal4820");
-//      driver.findElement(By.xpath("//*[@id='u_0_b']")).click();
+        driver.findElement(By.cssSelector("[value = 'Log In']")).click();
+        // driver.findElement(By.xpath("//*[@id='u_0_b']")).click();
 
-        driver.findElement(By.linkText("Forgotten account?")).click();
-        driver.findElement(By.cssSelector("input#identify_email.inputtext")).sendKeys("1234");
-        driver.findElement(By.xpath("//*[@id=\"identify_yourself_flow\"]")).click();
-        driver.findElement(By.xpath("//*[@id=\"u_0_2\"]")).click();
+//        driver.findElement(By.linkText("Forgotten account?")).click();
+//        driver.findElement(By.cssSelector("input#identify_email.inputtext")).sendKeys("1234");
+//        driver.findElement(By.xpath("//*[@id=\"identify_yourself_flow\"]")).click();
+//        driver.findElement(By.xpath("//*[@id=\"u_0_2\"]")).click();
 
 //      driver.findElement(By.name("firstname")).sendKeys("Muhammad");
 //      driver.findElement(By.name("lastname")).sendKeys("Arsalan");
@@ -36,7 +37,7 @@ public class Test1 {
     public void login2 () {
 
         //Salesforce page//
-        System.setProperty("webdriver.chrome.driver" , "C:\\Users\\arsalan\\Downloads\\New folder\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver" , "C:\\Users\\asiddique\\Downloads\\Git repo\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
 
         driver.get("https://login.salesforce.com/?locale=in");
